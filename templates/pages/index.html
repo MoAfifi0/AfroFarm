@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Home{% endblock %}
+{% block content %}
+<div class="container-fluid">
+
+  <!--jumbotron 1-->
+  <section>
+    <div class="jumbotron jumbotron-fluid p-3 m-0 text-center" >
+      <div class="d-inline-block align-top" >
+        <h1 class="display-4">Afro Farm</h1>
+        <p class="lead" >
+          Our development under our fertile land.
+        </p>
+      </div>
+    </div>
+  </section>
+
+ <!--carousel-->
+  <section>
+    <div id="carouselMyCoffee" class="carousel slide carousel-fade" data-ride="carousel">
+      <div class="carousel-inner">
+
+        <div class="carousel-item active" data-interval="1500">
+          <img src="{% static 'images/img1.jpg' %}" class="d-block w-100" alt="...">
+        </div>
+
+        <div class="carousel-item" data-interval="1500">
+          <img src="{% static 'images/img2.jpg' %}" class="d-block w-100" alt="...">
+        </div>
+
+        <div class="carousel-item" data-interval="1500">
+          <img src="{% static 'images/img3.jpg' %}" class="d-block w-100" alt="...">
+        </div>
+
+        <div class="carousel-item" data-interval="1500">
+          <img src="{% static 'images/img4.jpg' %}" class="d-block w-100" alt="...">
+        </div>
+
+      </div>
+    </div>
+  </section>
+{% endblock %}
